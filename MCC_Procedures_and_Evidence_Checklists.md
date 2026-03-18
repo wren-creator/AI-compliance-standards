@@ -9,7 +9,7 @@ This companion document provides **standard operating procedures (SOPs)** and **
 ---
 
 
-### MCC‑01 — AI Risk Management Lifecycle (AIRM)
+### MCC‑01: AI Risk Management Lifecycle (AIRM)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -44,18 +44,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑02 — Data Governance & Quality (DGQ)
+### MCC‑02: Data Governance & Quality (DGQ)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -90,18 +90,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑03 — Logging, Monitoring & Traceability (LMT)
+### MCC‑03: Logging, Monitoring & Traceability (LMT)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -135,18 +135,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑04 — Human Oversight & HITL (HO)
+### MCC‑04: Human Oversight & HITL (HO)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -180,18 +180,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑05 — Transparency & User Information (TXP)
+### MCC‑05: Transparency & User Information (TXP)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -225,18 +225,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑06 — Security, Robustness & TEVV (SRT)
+### MCC‑06: Security, Robustness & TEVV (SRT)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -270,18 +270,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- onfigs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑07 — Access Control & RBAC (ARB)
+### MCC‑07: Access Control & RBAC (ARB)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -315,18 +315,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑08 — Configuration Management & CM‑6 for AI CIs (CMC)
+### MCC‑08: Configuration Management & CM‑6 for AI CIs (CMC)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -360,18 +360,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑09 — Model & Data Provenance / Integrity (MDP)
+### MCC‑09: Model & Data Provenance / Integrity (MDP)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -405,18 +405,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑10 — Signed CI/CD & Artifact Attestation (SCD)
+### MCC‑10: Signed CI/CD & Artifact Attestation (SCD)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -450,18 +450,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑11 — AI Gateway Enforcement (AGE)
+### MCC‑11: AI Gateway Enforcement (AGE)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -495,18 +495,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑12 — RAG & Vector Store Governance (RVG)
+### MCC‑12: RAG & Vector Store Governance (RVG)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -540,18 +540,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑13 — Incident Response for AI (IR‑AI)
+### MCC‑13: Incident Response for AI (IR‑AI)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -585,18 +585,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑14 — Post‑Market Monitoring & Drift (PMD)
+### MCC‑14: Post‑Market Monitoring & Drift (PMD)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -630,18 +630,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑15 — Supplier & Third‑Party Governance (STG)
+### MCC‑15: Supplier & Third‑Party Governance (STG)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -675,18 +675,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑16 — Sector Overlays (SEC‑OV)
+### MCC‑16: Sector Overlays (SEC‑OV)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -720,18 +720,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑17 — Transparency Records & Technical Documentation (TRD)
+### MCC‑17: Transparency Records & Technical Documentation (TRD)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -765,18 +765,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑18 — Gateway Bypass Prevention & Egress Control (GBE)
+### MCC‑18: Gateway Bypass Prevention & Egress Control (GBE)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -810,18 +810,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑19 — Explainability & Output Governance (XOG)
+### MCC‑19: Explainability & Output Governance (XOG)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -855,18 +855,18 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
 
 
-### MCC‑20 — Governance Reviews & Continuous Improvement (GRCI)
+### MCC‑20: Governance Reviews & Continuous Improvement (GRCI)
 
 #### Standard Operating Procedure (SOP)
 1. **Trigger & Intake**
@@ -900,12 +900,12 @@ This companion document provides **standard operating procedures (SOPs)** and **
   - Define alerts & thresholds; document rollback/kill‑switch; escalate to IR when required.
 
 #### Evidence Checklist (attach to ticket)
-- ✅ Intake record (ticket ID) & risk tier
-- ✅ Owner assignments & SoD confirmation
-- ✅ Configs/policies/baselines referenced (commit SHAs or doc links)
-- ✅ Screenshots/CLI output of validation checks
-- ✅ SIEM query results proving AU‑2/AU‑3 logging
-- ✅ Approvals (names, timestamps)
-- ✅ Final status & date; next review date
+- Intake record (ticket ID) & risk tier
+- Owner assignments & SoD confirmation
+- Configs/policies/baselines referenced (commit SHAs or doc links)
+- Screenshots/CLI output of validation checks
+- SIEM query results proving AU‑2/AU‑3 logging
+- Approvals (names, timestamps)
+- Final status & date; next review date
 
 ---
