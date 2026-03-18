@@ -13,20 +13,21 @@ This directory contains:
 ---
 
 ## Folder Layout
-AI-BOM/
-README.md
-schema/
-ai-bom.schema.json
-models/
-<model_name>/<version>/ai-bom.json
-prompts/
-&lt;prompt_name>/<version>/ai-bom.json
-datasets/
-&lt;dataset_name>/<version>/ai-bom.json
-vectors/
-&lt;store_name>/&lt;index_id>/ai-bom.json
-tools/
-&lt;tool_name>/<version>/ai-bom.json</version></version></version></version>
+
+AI-BOM/<br>
+├── README.md<br>
+├── schema/<br>
+│ &nbsp;&nbsp;  └── ai-bom.schema.json<br>
+├── models/<br>
+│ &nbsp;&nbsp; └── <model_name>/<version>/ai-bom.json<br>
+├── prompts/<br>
+│ &nbsp;&nbsp;  └── <prompt_name>/<version>/ai-bom.json<br>
+├── datasets/<br>
+│ &nbsp;&nbsp;  └── <dataset_name>/<version>/ai-bom.json<br>
+├── vectors/<br>
+│ &nbsp;&nbsp;  └── <store_name>/<index_id>/ai-bom.json<br>
+└── tools/<br>
+ &nbsp;&nbsp;   └── <tool_name>/<version>/ai-bom.json<br>
 
 - **Versioning:** Each version gets its own folder (immutable once released).
 - **IDs in Logs:** AI‑BOM `id` and `version` must appear in AU‑2/AU‑3 logs for all inference, training, indexing, and gateway enforcement events.
