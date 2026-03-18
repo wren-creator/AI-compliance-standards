@@ -67,7 +67,7 @@ datasets/<dataset_name>/<version>/ai-bom.json</version>
     }
   ]
 }
-
+```
 Authoring Checklist
 
  Lineage and collection method documented
