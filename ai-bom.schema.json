@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-Bill-of-Materials",
+  "type": "object",
+  "required": [
+    "id", "type", "version", "owner", "provenance",
+    "security", "risk", "tevv", "signatures"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["model", "prompt", "dataset", "vector_index", "tool"] },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+
+    "owner": {
+      "type": "object",
+      "properties": {
+        "model_owner": { "type": "string" },
+        "aims_admin": { "type": "string" }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "hash": { "type": "string" },
+        "download_url": { "type": "string" },
+        "license": { "type": "string" },
+        "upstream_model": { "type": "string" },
+        "training_data_lineage": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "tevv": {
+      "type": "object",
+      "properties": {
+        "last_run": { "type": "string" },
+        "results_url": { "type": "string" },
+        "fairness_eval": { "type": "string" },
+        "robustness_eval": { "type": "string" },
+        "adversarial_eval": { "type": "string" },
+        "regression_suite": { "type": "string" }
+      }
+    },
+
+    "security": {
+      "type": "object",
+      "properties": {
+        "signing_key": { "type": "string" },
+        "integrity_hash": { "type": "string" },
+        "sbom_reference": { "type": "string" },
+        "cve_scan_results": { "type": "string" }
+      }
+    },
+
+    "risk": {
+      "type": "object",
+      "properties": {
+        "risk_classification": { "type": "string" },
+        "risk_assessment": { "type": "string" },
+        "controls_applied": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "signer": { "type": "string" },
+          "signature": { "type": "string" },
+          "timestamp": { "type": "string" }
+        }
+      }
+    }
+  }
+}
