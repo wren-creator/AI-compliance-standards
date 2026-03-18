@@ -68,9 +68,16 @@ datasets/<dataset_name>/<version>/ai-bom.json</version>
   ]
 }
 ```
-Authoring Checklist
+##Dataset Authoring Checklist
 
- Lineage and collection method documented
- Consent/license/usage constraints recorded
- DQ and bias checks attached
- Sensitive data handling & redaction documented
+- [ ] **Lineage and collection method documented**  
+  - Include source systems, collection tools, and acquisition workflow.
+
+- [ ] **Consent / license / usage constraints recorded**  
+  - Note license type, redistribution rules, consent forms, and any usage restrictions.
+
+- [ ] **Data quality (DQ) and bias checks attached**  
+  - Provide results of validation, completeness checks, representational bias review, and known limitations.
+
+- [ ] **Sensitive data handling & redaction documented**  
+  - Describe masking, tokenization, PII handling, and secure storage requirements.
