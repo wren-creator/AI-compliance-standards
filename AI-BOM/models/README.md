@@ -72,17 +72,23 @@ models/<model_name>/<version>/ai-bom.json</version>
     }
   ]
 }
+```
+## Authoring Checklist
 
-Authoring Checklist
+- [ ] **Version folder created:** `models/<name>/<version>/`
+- [ ] **Hashes recorded match immutable artifact**
+- [ ] **TEVV report attached and passing gates**
+- [ ] **SBOM and CVE scan references included**
+- [ ] **Risk classification aligns with sector overlays**
+- [ ] **Model_Owner + AIMS_Admin approvals required**
 
- Version folder created: models/<name>/<version>/
- Hashes recorded match immutable artifact
- TEVV report attached and passing gates
- SBOM and CVE scan references included
- Risk classification aligns with sector overlays
- Model_Owner + AIMS_Admin approvals required
+---
 
-Evidence & Logging
+## Evidence & Logging Requirements
 
-Include AI‑BOM id and version in all training, promotion, deployment, and inference logs.
-Link promotion tickets and change requests (CM‑6).
+- Include **AI‑BOM ID and version** in all:
+  - training logs  
+  - promotion logs  
+  - deployment logs  
+  - inference logs  
+- Link all **promotion tickets** and **change requests (CM‑6)**.
