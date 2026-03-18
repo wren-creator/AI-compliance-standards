@@ -1,0 +1,8 @@
+# Map roles to GitHub usernames (no @). Keep lists current.
+aims_admins:
+  - aims-admin-1
+  - aims-admin-2
+
+model_owners:
+  - model-owner-1
+  - model-owner-2
