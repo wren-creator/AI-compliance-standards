@@ -1,4 +1,4 @@
-```markdown
+
 # AI‑BOM for Tools & Plugins
 
 Tracks **retrieval tools**, **action agents**, **plugins**, and **API adapters** that the AI system can invoke.
@@ -63,10 +63,11 @@ tools/<tool_name>/<version>/ai-bom.json</version>
     }
   ]
 }
+```
 
-Authoring Checklist
+## Authoring Checklist
 
- API scopes and egress rules documented
- SBOM and CVE scans linked
- Fault/adversarial tests attached
- RBAC/SoD enforced through approvals
+- [ ] **API scopes and egress rules documented**
+- [ ] **SBOM and CVE scans linked**
+- [ ] **Fault / adversarial tests attached**
+- [ ] **RBAC / Segregation of Duties (SoD) enforced through approvals**
