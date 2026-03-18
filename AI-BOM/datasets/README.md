@@ -1,4 +1,4 @@
-```markdown
+
 # AI‑BOM for Datasets
 
 Tracks **training**, **fine‑tune**, **evaluation**, and **synthetic** datasets as configuration items with full lineage.
