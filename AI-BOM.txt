@@ -1,0 +1,219 @@
+AI-BOM
+
+AI‑BOM Standards & Structure
+A GitHub‑ready specification for integrating AI‑BOM into your global AI Governance & Compliance Framework
+This is written to seamlessly slot into your MCC, SOPs, CI/CD pipeline, and the configuration governance model already established.
+
+✅ 1. Why an AI‑BOM Is Critical
+An AI‑BOM is now considered the AI equivalent of an SBOM — a required artifact for:
+
+EU AI Act Annex IV technical documentation (model info, training data provenance, version history)
+ISO/IEC 42001 AIMS documentation requirements
+ISO/IEC 23894 risk management evidence
+NIST AI RMF (Measure / Manage) transparency & continuous monitoring
+NIST SP 800‑53 CM‑6 configuration governance
+NIST SP 800‑171 3.4.x configuration baselines for CUI systems
+
+Your architecture (signed artifacts, registries, gateway, provenance enforcement) already assumes treat‑AI‑as‑config. So the AI‑BOM becomes the single authoritative inventory proving compliance.
+
+✅ 2. AI‑BOM Scope (Models, Prompts, Data, Tools, Extensions)
+Your AI‑BOM covers all configuration items used in AI systems:
+✅ 2.1 Models
+
+base models (open-source, commercial, internal)
+fine‑tuned models
+distilled / quantized variants
+embeddings models
+TEVV results per version
+cryptographic signatures
+
+✅ 2.2 Prompts / Agents
+
+system prompts
+tool definitions
+agent graphs / workflows
+PE‑style guardrails
+
+✅ 2.3 Data Assets
+
+training datasets
+synthetic generation pipelines
+vector stores (index metadata + hash)
+data lineage
+
+✅ 2.4 Tools / Plugins
+
+retrieval tools
+action agents
+APIs
+
+✅ 2.5 Runtime Config / Gateway Rules
+
+redaction rules
+allow‑lists
+safety guard settings
+inference policies
+
+You’ve already defined all of these as CM‑6 governed artifacts — the AI‑BOM formalizes this in an audit‑friendly structure.
+
+✅ 3. GitHub‑Ready AI‑BOM Structure
+Place this inside your governance repo:
+/AI-BOM/
+    README.md
+    schema/
+        ai-bom.schema.json
+    models/
+        <model_name>/<version>/ai-bom.json
+    prompts/
+        <prompt_name>/<version>/ai-bom.json
+    datasets/
+        <dataset_name>/<version>/ai-bom.json
+    vectors/
+        <store_name>/<index_id>/ai-bom.json
+    tools/
+        <tool_name>/<version>/ai-bom.json
+
+
+✅ 4. AI‑BOM Master Schema (JSON)
+A clean, version‑controlled schema your GitHub PR bot will enforce:
+json
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-Bill-of-Materials",
+  "type": "object",
+  "required": [
+    "id", "type", "version", "owner", "provenance",
+    "security", "risk", "tevv", "signatures"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["model", "prompt", "dataset", "vector_index", "tool"] },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+
+    "owner": {
+      "type": "object",
+      "properties": {
+        "model_owner": { "type": "string" },
+        "aims_admin": { "type": "string" }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "hash": { "type": "string" },
+        "download_url": { "type": "string" },
+        "license": { "type": "string" },
+        "upstream_model": { "type": "string" },
+        "training_data_lineage": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "tevv": {
+      "type": "object",
+      "properties": {
+        "last_run": { "type": "string" },
+        "results_url": { "type": "string" },
+        "fairness_eval": { "type": "string" },
+        "robustness_eval": { "type": "string" },
+        "adversarial_eval": { "type": "string" },
+        "regression_suite": { "type": "string" }
+      }
+    },
+
+    "security": {
+      "type": "object",
+      "properties": {
+        "signing_key": { "type": "string" },
+        "integrity_hash": { "type": "string" },
+        "sbom_reference": { "type": "string" },
+        "cve_scan_results": { "type": "string" }
+      }
+    },
+
+    "risk": {
+      "type": "object",
+      "properties": {
+        "risk_classification": { "type": "string" },
+        "risk_assessment": { "type": "string" },
+        "controls_applied": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "signer": { "type": "string" },
+          "signature": { "type": "string" },
+          "timestamp": { "type": "string" }
+        }
+      }
+    }
+  }
+}
+
+5. AI‑BOM Governance Rules (PR Bot Automation)
+These will go into .github/workflows/ai-bom-validation.yml.
+✅ 5.1 PR bot must enforce:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RequirementEnforcementEvery model/prompt/tool change includes an AI‑BOM❌ Block mergeAI‑BOM must pass schema validation❌ Block mergeTEVV results must be referenced❌ Block mergeArtifact must be signed❌ Block mergeModel_Owner + AIMS_Admin approvals❌ Block mergeSBOM link required for any executable or library❌ Block merge
+
+✅ 6. Integration With Your Existing Controls
+✅ AI Risk Lifecycle → AI‑BOM encodes risk class + applicable controls
+✅ CM‑6 Configuration Baseline → all AI artifacts are configuration items
+✅ Provenance & Model Cards → AI‑BOM includes both
+✅ Signed CI/CD → signing keys/signatures captured
+✅ AU‑2 / AU‑3 Logging → AI‑BOM version IDs appear in all logs
+✅ TEVV → results are linked
+✅ Sector overlays → risk_classification field supports sector mapping
+The AI‑BOM becomes the compliance nucleus.
+
+Authoring Checklist
+
+ Include guardrails and gateway policy references
+ Provide prompt regression and adversarial/jailbreak results
+ Update agent graph/tool bindings if changed and cross‑reference in Tools AI‑BOM
+ Approvals & signatures captured
+
+Logging
+
+Inference and content moderation logs must include ai_bom.id, prompt version, gateway policy id, and redaction decisions.
+
+
+
