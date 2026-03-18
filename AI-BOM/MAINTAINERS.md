@@ -16,7 +16,7 @@ All maintainers must follow:
 
 # 1. Maintainer Roles
 
-## ✅ 1.1 AIMS_Admin (Governance Authority)
+## 1.1 AIMS_Admin (Governance Authority)
 **Responsibilities:**
 - Approves PRs involving regulated AI assets.
 - Ensures compliance with MCC controls and sector overlays.
@@ -30,7 +30,7 @@ All maintainers must follow:
 
 ---
 
-## ✅ 1.2 Model_Owner (Content Authority)
+## 1.2 Model_Owner (Content Authority)
 **Responsibilities:**
 - Validates correctness of models, prompts, datasets, tools, or vector indexes.
 - Ensures lineage, provenance, and versioning accuracy.
@@ -43,7 +43,7 @@ All maintainers must follow:
 
 ---
 
-## ✅ 1.3 Security_Maintainer (Security Oversight)
+## 1.3 Security_Maintainer (Security Oversight)
 **Responsibilities:**
 - Verifies SBOM references and CVE scans.
 - Confirms signature and artifact integrity.
@@ -52,7 +52,7 @@ All maintainers must follow:
 
 ---
 
-## ✅ 1.4 Repository_Maintainer (Operational Support)
+## 1.4 Repository_Maintainer (Operational Support)
 **Responsibilities:**
 - Reviews documentation, folder structure, templates, and schemas.
 - Ensures CI/CD pipeline stability.
@@ -78,13 +78,13 @@ All maintainers must follow:
 
 # 3. Maintainer Permissions
 
-### ✅ Maintainers *may*:
+### Maintainers *may*:
 - Trigger CI/CD & validation workflows
 - Merge PRs only after all automated and human checks pass
 - Request additional evidence or TEVV reruns
 - Flag risky changes for security/audit review
 
-### ❌ Maintainers *may NOT*:
+### Maintainers *may NOT*:
 - Merge failing PRs
 - Approve their own work
 - Bypass signature, TEVV, or schema validation
@@ -120,10 +120,10 @@ All access changes must be auditable per AU‑2/AU‑3.
 
 # 6. Contact
 
-- **AIMS Admin Team:** aims-admin@example.com  
+<!-- - **AIMS Admin Team:** aims-admin@example.com  
 - **Security Team:** sec-ops@example.com  
 - **Model Owners Group:** model-owners@example.com  
-- **Repository Maintainers:** repo-maintainers@example.com  
+- **Repository Maintainers:** repo-maintainers@example.com --> 
 
 ---
 
