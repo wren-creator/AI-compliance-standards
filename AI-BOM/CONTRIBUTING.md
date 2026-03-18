@@ -197,10 +197,10 @@ And PR titles like:
 
 For questions or approval routing:
 
-- **AIMS Admin Team:** aims-admin@example.com  
+<!--- **AIMS Admin Team:** aims-admin@example.com  
 - **Model Owners Group:** model-owners@example.com  
 - **Security/Compliance:** security-gov@example.com  
-- **Repository Maintainers:** repo-maintainers@example.com  
+- **Repository Maintainers:** repo-maintainers@example.com -->  
 
 ---
 
