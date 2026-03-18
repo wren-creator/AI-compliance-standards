@@ -1,4 +1,4 @@
-```markdown
+
 # AI‑BOM for Prompts & Agents
 
 Tracks **system prompts**, **agent graphs/workflows**, and **tool bindings** as governed configuration items.
@@ -64,14 +64,22 @@ prompts/<prompt_or_agent_name>/<version>/ai-bom.json</version>
     }
   ]
 }
+```
+## Authoring Checklist
 
-Authoring Checklist
+- [ ] **Include guardrails and gateway policy references**
+- [ ] **Provide prompt regression and adversarial/jailbreak results**
+- [ ] **Update agent graph / tool bindings if changed**  
+  - Cross‑reference updates in the **Tools AI‑BOM**
+- [ ] **Approvals & signatures captured**
 
- Include guardrails and gateway policy references
- Provide prompt regression and adversarial/jailbreak results
- Update agent graph/tool bindings if changed and cross‑reference in Tools AI‑BOM
- Approvals & signatures captured
+---
 
-Logging
+## Logging Requirements
 
-Inference and content moderation logs must include ai_bom.id, prompt version, gateway policy id, and redaction decisions.
+Inference and content‑moderation logs **must include**:
+
+- `ai_bom.id`
+- prompt version
+- gateway policy ID
+- redaction decisions
