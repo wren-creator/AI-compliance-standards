@@ -28,15 +28,15 @@
 
 ## 1. Executive Summary
 
-AI governance is shifting from fragmented, undocumented norms to a unified, enforceable control plane. For most organizations today, AI policies are scattered across ad hoc expectations, vendor usage terms, tribal security knowledge, and shadow rules living in individual teams' heads — creating inconsistent risk posture, unpredictable approvals, and policy debt that accumulates like technical debt.
+AI governance is shifting from fragmented, undocumented norms to a unified, enforceable control plane. For most organizations today, AI policies are scattered across ad hoc expectations, vendor usage terms, tribal security knowledge, and shadow rules living in individual teams' heads creating inconsistent risk posture, unpredictable approvals, and policy debt that accumulates like technical debt.
 
 This document establishes a coherent, authoritative, and enforceable AI governance framework built on three foundational principles:
 
 - **Anchor to established frameworks.** By aligning to NIST AI RMF, ISO/IEC 42001, the EU AI Act, and OWASP GenAI, governance decisions are defensible, audit-ready, and globally portable.
-- **Set precedent proactively.** Rather than reacting to external enforcement timelines or vendor-defined guardrails, this framework establishes internal norms that become the standard others follow — rational controls that enable delivery instead of creating bureaucratic drag.
+- **Set precedent proactively.** Rather than reacting to external enforcement timelines or vendor-defined guardrails, this framework establishes internal norms that become the standard others follow, rational controls that enable delivery instead of creating bureaucratic drag.
 - **Couple policy to technical enforcement.** Rules are not merely words. Every policy maps to enforceable controls: gateways, logging, redaction, registries, and telemetry feeding directly into SIEM infrastructure.
 
-The framework is organized around a unified strategy: **follow the strictest rule (the EU AI Act) to simplify global operations.** By anchoring to a common core — risk management, data governance, and logging — we create regional dial settings that allow compliance tuning for specific jurisdictions without reinventing the wheel. Build once, deploy anywhere.
+The framework is organized around a unified strategy: **follow the strictest rule (the EU AI Act) to simplify global operations.** By anchoring to a common core, risk management, data governance, and logging. We create regional dial settings that allow compliance tuning for specific jurisdictions without reinventing the wheel. Build once, deploy anywhere.
 
 ---
 
@@ -82,35 +82,35 @@ Despite significant differences in legal status, all major global frameworks sha
 
 Conflating these layers creates documents that are simultaneously too abstract to enforce and too detailed to survive organizational change. The mental model: *policy text references frameworks; standards implement them; configurations enforce them.*
 
-### Layer A — Board-Level Policies (The "Durable" Intent)
+### Layer A: Board-Level Policies (The "Durable" Intent)
 
-Policies define principles, scope, and intent. They should be durable — resistant to organizational restructuring — and written at a level executives and auditors can meaningfully review.
+Policies define principles, scope, and intent. They should be durable, resistant to organizational restructuring, and written at a level executives and auditors can meaningfully review.
 
 | Policy | Description |
 |--------|-------------|
 | **AI Acceptable Use and Data Boundary Policy** | Establishes the Data Boundary, strictly prohibiting transfer of PII or sensitive data to unapproved public endpoints. **Publish this first.** |
-| **AI Risk Classification Policy** | Automatically categorizes every project into one of four tiers: Prohibited, High, Limited, or Minimal — mirroring the EU AI Act hierarchy. |
+| **AI Risk Classification Policy** | Automatically categorizes every project into one of four tiers: Prohibited, High, Limited, or Minimal mirroring the EU AI Act hierarchy. |
 | **Third-Party AI Procurement and Model Intake Policy** | Requires model cards, SBOMs, license/terms review, security posture assessment, and test evidence before any external model is onboarded. |
 | **AI Logging, Monitoring, and Retention Policy** | Mandates event types, retention periods, and PII minimization requirements. Mapped to AU-2 and AU-3. |
 | **Human-in-the-Loop Policy** | For high-risk decisions: requires pre-deployment TEVV and defines operational thresholds for human review. Mirrors EU AI Act Articles 9–15. |
 
-### Layer B — Mappable Standards (The "Bridge")
+### Layer B: Mappable Standards (The "Bridge")
 
 Standards translate policy intent into specific requirements that can be mapped directly to security controls.
 
-- **Identity and Access Standard** — Least-privileged tool access and token scoping for all AI agent interactions.
-- **Data Governance Standard** — Specific masking, retrieval filtering, and PII/sensitive term deny-lists required for RAG systems.
-- **Secure SDLC for AI** — Mandates red-teaming, toxicity evaluations, and jailbreak resistance testing before any production Go-Live. Aligns to NIST AI RMF Measure and Manage functions.
-- **Content Provenance Standard** — Hashing, watermarking, or provenance metadata for machine-generated content per EO 14110.
-- **Supply Chain Standard** — Governs curation of models, datasets, and embeddings; vendor SLA requirements; CVE monitoring for AI libraries; minimum model card requirements per ISO/IEC 42001.
+- **Identity and Access Standard**: Least-privileged tool access and token scoping for all AI agent interactions.
+- **Data Governance Standard**: Specific masking, retrieval filtering, and PII/sensitive term deny-lists required for RAG systems.
+- **Secure SDLC for AI**: Mandates red-teaming, toxicity evaluations, and jailbreak resistance testing before any production Go-Live. Aligns to NIST AI RMF Measure and Manage functions.
+- **Content Provenance Standard**: Hashing, watermarking, or provenance metadata for machine-generated content per EO 14110.
+- **Supply Chain Standard**: Governs curation of models, datasets, and embeddings; vendor SLA requirements; CVE monitoring for AI libraries; minimum model card requirements per ISO/IEC 42001.
 
-### Layer C — Enforceable Procedures (The "Runbooks")
+### Layer C: Enforceable Procedures (The "Runbooks")
 
-Procedures are the operational layer — specific enough to enforce, simple enough to use.
+Procedures are the operational layer; specific enough to enforce, simple enough to use.
 
-- **AI Intake and Impact Assessment (AIIA)** — A streamlined, 3-to-5 page document required for high-risk use cases to ensure Article 9 compliance, without imposing unnecessary burden on lower-risk workloads.
-- **Logging and Output Hygiene Runbook** — Step-by-step technical instructions for capturing telemetry (AU-2/AU-3) while ensuring secrets are masked and sensitive data is redacted.
-- **AI Incident Response Playbooks** — Procedures for AI-specific threat scenarios: prompt injection, data exfiltration, harmful content generation, and model compromise. Aligned to OWASP LLM Top 10.
+- **AI Intake and Impact Assessment (AIIA)**: A streamlined, 3-to-5 page document required for high-risk use cases to ensure Article 9 compliance, without imposing unnecessary burden on lower-risk workloads.
+- **Logging and Output Hygiene Runbook**: Step-by-step technical instructions for capturing telemetry (AU-2/AU-3) while ensuring secrets are masked and sensitive data is redacted.
+- **AI Incident Response Playbooks**: Procedures for AI-specific threat scenarios: prompt injection, data exfiltration, harmful content generation, and model compromise. Aligned to OWASP LLM Top 10.
 
 ---
 
@@ -124,11 +124,11 @@ The architecture below is platform-agnostic and equally applicable to on-premise
 
 Regardless of whether a model runs on-premises (zLinux/Ollama), in a private cloud, or via SaaS, the following controls are **non-negotiable**:
 
-- **Centralized Gateway Egress** — All AI traffic must route through a proxy that enforces allow-lists, strips sensitive data, and attaches policy context (tenant identity, data classification tags, stated purpose) to every request.
-- **Identity and "Least Agency"** — AI agents are granted short-lived, scoped tokens. Unless explicitly approved, LLMs operate without shell access or production write capabilities to prevent "Excessive Agency." *(OWASP GenAI Top 10)*
-- **Configuration Hardening (CM-6)** — AI behavior is treated as a Configuration Item (CI). Prompt templates, model hashes, and vector DB schemas are versioned and read-only in production. A change to a prompt template changes system behavior as significantly as a code deploy — and must be treated accordingly.
-- **Telemetry and Audit** — Minimum required events: model ID/version, tool invocations, data tags, policy decisions (allowed/blocked/redacted), redaction actions, evaluator scores, and user identity. Mapped to AU-2/AU-3; retained per applicable regulatory clocks.
-- **TEVV and Red-Teaming** — Pre-production adversarial testing covering jailbreaks, data leakage, prompt injection, RAG poisoning, and cost-denial-of-service (unbounded inference consumption). Required before any production exposure or external pilot.
+- **Centralized Gateway Egress**: All AI traffic must route through a proxy that enforces allow-lists, strips sensitive data, and attaches policy context (tenant identity, data classification tags, stated purpose) to every request.
+- **Identity and "Least Agency"**: AI agents are granted short-lived, scoped tokens. Unless explicitly approved, LLMs operate without shell access or production write capabilities to prevent "Excessive Agency." *(OWASP GenAI Top 10)*
+- **Configuration Hardening (CM-6)**: AI behavior is treated as a Configuration Item (CI). Prompt templates, model hashes, and vector DB schemas are versioned and read-only in production. A change to a prompt template changes system behavior as significantly as a code deploy, and must be treated accordingly.
+- **Telemetry and Audit**: Minimum required events: model ID/version, tool invocations, data tags, policy decisions (allowed/blocked/redacted), redaction actions, evaluator scores, and user identity. Mapped to AU-2/AU-3; retained per applicable regulatory clocks.
+- **TEVV and Red-Teaming**: Pre-production adversarial testing covering jailbreaks, data leakage, prompt injection, RAG poisoning, and cost-denial-of-service (unbounded inference consumption). Required before any production exposure or external pilot.
 
 ### 4.2 Deployment Environment Controls
 
@@ -140,7 +140,7 @@ Regardless of whether a model runs on-premises (zLinux/Ollama), in a private clo
 
 ### 4.3 Configuration Management for AI (CM-6 Applied)
 
-A tweak to a prompt template, a modification to retrieval pipeline weights, or a swap of the underlying model artifact changes system behavior as significantly as a software release — but may trigger none of existing change control gates.
+A tweak to a prompt template, a modification to retrieval pipeline weights, or a swap of the underlying model artifact changes system behavior as significantly as a software release, but may trigger none of existing change control gates.
 
 | Configuration Item | Baseline Requirements |
 |-------------------|----------------------|
@@ -183,7 +183,7 @@ This structure prevents: unauthorized behavioral drift, embedding poisoning, pro
 
 ## 6. AI Use-Case Lifecycle: From Idea to Retirement
 
-The lifecycle is designed to be simple, familiar, and predictable — similar to change management, but quicker and fit-for-purpose for AI.
+The lifecycle is designed to be simple, familiar, and predictable, similar to change management, but quicker and fit-for-purpose for AI.
 
 ```
 Intake → Risk Triage → Controls Assignment → Build & TEVV → Go/No-Go → Operate → Decommission
@@ -193,7 +193,7 @@ Intake → Risk Triage → Controls Assignment → Build & TEVV → Go/No-Go →
 |-------|-------------|
 | **1. Intake** | 1-page form: purpose, data classifications, user population, integration points, and target model(s). The entry point for everything. |
 | **2. Risk Triage** | Auto-classify to Prohibited, High, Limited, or Minimal using a decision tree aligned to EU AI Act tiers. High-risk triggers a full AIIA and mandatory HITL configuration. |
-| **3. Controls Assignment** | Apply the pre-defined control bundle for the risk tier. No per-case negotiation — predictable lanes only. |
+| **3. Controls Assignment** | Apply the pre-defined control bundle for the risk tier. No per-case negotiation predictable lanes only. |
 | **4. Build and TEVV** | Scenario tests, adversarial red-team testing, bias/safety metric evaluation. Record all results in the Model Card per NIST AI RMF Measure documentation standards. |
 | **5. Go/No-Go (Lightweight CAB)** | Review scope, agency permissions, and rollback procedures. Designed for a 30-minute queue, not a 30-day cycle. |
 | **6. Operate** | Continuous drift and safety monitoring, cost guardrails, quarterly access reviews, incident response rehearsal. |
@@ -210,7 +210,7 @@ Culture shifts happen before documents. These ten rules can be announced and enf
 | # | Rule | Required Action |
 |---|------|----------------|
 | **1** | **The Data Boundary:** Strict prohibition on sending PII, CUI, or IP to public LLM endpoints. | All external model traffic must route through the approved AI Gateway with redaction enabled. |
-| **2** | **Zero Shadow AI:** Every use case — including internal experiments — must be registered. | Submit a 1-page intake form before initiating any new model pull or API integration. |
+| **2** | **Zero Shadow AI:** Every use case — including internal experiments must be registered. | Submit a 1-page intake form before initiating any new model pull or API integration. |
 | **3** | **Human-in-the-Loop (HITL):** Human review is mandatory for AI outputs affecting finance, HR, customers, or security. | High-risk systems must trigger a manual approval gate before final execution. |
 | **4** | **Curated Model Registry:** Only models and plugins from the authorized internal registry are permitted in production. | Verify the cryptographic hash and license of any model against the Model Registry before deployment. |
 | **5** | **Mandatory Logging (AU-2/AU-3):** Prompt and output logging is ON by default for all enterprise AI interactions. | Ensure all telemetry includes user identity, timestamps, and redaction metadata. |
@@ -254,7 +254,7 @@ Focus: Make governance self-sustaining and externally defensible.
 - [ ] Integrate AI telemetry into the SIEM; add drift detection and safety dashboards
 - [ ] Run the first quarterly governance review and publish the initial **Quarterly Transparency Note**
 - [ ] Complete the **Human-in-the-Loop Policy** and **AI Impact Assessment** procedure
-- [ ] Begin the global compliance matrix build — mapping internal control statements to EU AI Act, ISO/IEC 42001, and NIST AI RMF
+- [ ] Begin the global compliance matrix build, mapping internal control statements to EU AI Act, ISO/IEC 42001, and NIST AI RMF
 
 > **Note:** This roadmap assumes a greenfield governance program. Organizations with existing SIEM integration, secret management, and egress controls may compress the timeline significantly by extending those controls to cover AI workloads rather than building parallel systems.
 
@@ -266,7 +266,7 @@ This matrix connects internal control themes and artifacts to the specific artic
 
 **How to use this matrix:**
 - **Audit Readiness:** When an auditor asks how you comply with EU AI Act Article 12 (Logging), point directly to your Logging and Output Hygiene Runbook and the resulting AU-2/AU-3 logs.
-- **Regulatory Updates:** When a framework is updated, update only the mapping in this matrix within 30 days — one change, not a full policy rewrite.
+- **Regulatory Updates:** When a framework is updated, update only the mapping in this matrix within 30 days; one change, not a full policy rewrite.
 - **Evidence Collection:** Each row should link to a folder of evidence (e.g., signed AIIA forms, timestamped red-team reports, configuration baseline records).
 
 | Control Theme | Internal Artifact / Procedure | EU AI Act | NIST AI RMF | ISO/IEC 42001 |
@@ -377,7 +377,7 @@ Completion of this form is required for **every AI use case, including experimen
 
 ### 2. Data Classification and Boundaries
 
-- **Data Types Involved:** Identification of data classifications — specifically noting PII, PHI, CUI, or Financial records.
+- **Data Types Involved:** Identification of data classifications specifically noting PII, PHI, CUI, or Financial records.
 - **Data Residency:** Disclosure of where the data will be processed: On-premises, Private Cloud, or Public SaaS.
 - **Egress Path:** Confirmation that all traffic will route through the centralized AI Gateway.
 
