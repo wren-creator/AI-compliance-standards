@@ -22,12 +22,12 @@ This document outlines responsibilities, workflows, and expectations for maintai
 ### Community & Contribution Management
 - Apply the **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)* to maintain a respectful space.
 - Provide constructive feedback on contributions.
-- Manage contributor acknowledgments in **[CONTRIBUTORS.md](./CONTRIBTERS.md)*.
+- Manage contributor acknowledgments in **[CONTRIBUTORS.md](./CONTRIBUTERS.md)*.
 
 ### Standards Governance
 - Review updates to:
-  - *AI-BOM*
-  - *Master Controls Catalog*
+  - *[AI-BOM](./AI-BOM)*
+  - *[Master Controls Catalog](./AI_Compliance_Master_Controls_Catalog.md)*
   - *Procedures & Evidence Checklists*
 - Maintain version alignment and terminology consistency.
 
