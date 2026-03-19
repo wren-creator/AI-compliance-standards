@@ -109,3 +109,6 @@ This enables AU‑2/AU‑3 queries for inference events, prompt/agent changes, m
 - `vectors/README.md` – Vector Index AI‑BOM template & examples
 - `tools/README.md` – Tool/Plugin AI‑BOM template & examples
 - `schema/ai-bom.schema.json` – Master schema used by PR bot
+
+
+![Open Source](https://badgen.net/badge/open/source/)
