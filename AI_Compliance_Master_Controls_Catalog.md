@@ -16,13 +16,13 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ## Roles & Separation of Duties (SoD)
 
-- **AIMS_Admin** — Owns governance program, policies, risk lifecycle, audits. No direct ability to deploy or modify production artifacts.
-- **Model_Owner** — Approves model/prompt/agent logic and evaluation criteria. Cannot deploy to production or modify vector DB contents.
-- **Data_Curator** — Curates sources, prepares embeddings in *staging only*. No production write permissions.
-- **Promoter** — Machine/service identity that executes *signed* promotions to production. Cannot approve changes.
-- **Ops_Custodian** — Manages infrastructure (clusters, networks, storage, secrets). No ability to change model/prompt/index content.
-- **Gateway_Admin** — Manages AI gateway policies (allow‑lists, redaction, rate/cost limits, provenance). No ability to alter models or vectors.
-- **Auditor** — Read‑only access to configurations, logs, and documentation.
+- **AIMS_Admin**: Owns governance program, policies, risk lifecycle, audits. No direct ability to deploy or modify production artifacts.
+- **Model_Owner**: Approves model/prompt/agent logic and evaluation criteria. Cannot deploy to production or modify vector DB contents.
+- **Data_Curator**: Curates sources, prepares embeddings in *staging only*. No production write permissions.
+- **Promoter**: Machine/service identity that executes *signed* promotions to production. Cannot approve changes.
+- **Ops_Custodian**: Manages infrastructure (clusters, networks, storage, secrets). No ability to change model/prompt/index content.
+- **Gateway_Admin**: Manages AI gateway policies (allow‑lists, redaction, rate/cost limits, provenance). No ability to alter models or vectors.
+- **Auditor**: Read‑only access to configurations, logs, and documentation.
 
 ---
 
@@ -51,7 +51,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑01 — AI Risk Management Lifecycle (AIRM)
+## MCC‑01: AI Risk Management Lifecycle (AIRM)
 **Purpose**: Ensure every AI use case follows a documented, repeatable risk process across the lifecycle.  
 **Scope**: All AI systems (on‑prem, private, public), prototypes → production.
 
@@ -69,7 +69,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑02 — Data Governance & Quality (DGQ)
+## MCC‑02: Data Governance & Quality (DGQ)
 **Purpose**: Assure lawful, high‑quality data for training, evaluation, and inference (RAG).  
 **Scope**: Training corpora, evaluation datasets, retrieved content, embeddings.
 
@@ -87,7 +87,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑03 — Logging, Monitoring & Traceability (LMT)
+## MCC‑03: Logging, Monitoring & Traceability (LMT)
 **Purpose**: Provide complete, consistent evidence for security, safety, and compliance.  
 **Scope**: Inference, tool calls, promotions, config changes, gateway events.
 
@@ -105,7 +105,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑04 — Human Oversight & HITL (HO)
+## MCC‑04: Human Oversight & HITL (HO)
 **Purpose**: Ensure meaningful human control over consequential AI actions.  
 **Scope**: High‑impact decisions (finance, medical, defense, HR, safety).
 
@@ -123,7 +123,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑05 — Transparency & User Information (TXP)
+## MCC‑05: Transparency & User Information (TXP)
 **Purpose**: Provide users with appropriate disclosures and explanations.  
 **Scope**: Customer‑facing content; employee‑facing tools with material impact.
 
@@ -141,7 +141,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑06 — Security, Robustness & TEVV (SRT)
+## MCC‑06: Security, Robustness & TEVV (SRT)
 **Purpose**: Validate model/system safety, robustness, and performance before release.  
 **Scope**: All prod‑bound models/prompts/vectors and major changes.
 
@@ -159,7 +159,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑07 — Access Control & RBAC (ARB)
+## MCC‑07: Access Control & RBAC (ARB)
 **Purpose**: Enforce least privilege & separation of duties across AI components.  
 **Scope**: Artifacts (models/prompts/indexes), gateways, clusters, CI/CD.
 
@@ -177,7 +177,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑08 — Configuration Management & CM‑6 for AI CIs (CMC)
+## MCC‑08: Configuration Management & CM‑6 for AI CIs (CMC)
 **Purpose**: Treat models, prompts, vector indexes, tools, and gateway policies as **configuration items** with hardened baselines.  
 **Scope**: All AI behavior‑defining assets.
 
@@ -195,7 +195,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑09 — Model & Data Provenance / Integrity (MDP)
+## MCC‑09: Model & Data Provenance / Integrity (MDP)
 **Purpose**: Guarantee provenance and integrity of all AI artifacts and data lineages.  
 **Scope**: Model weights, tokenizers, prompts, datasets, vector indices, safety filters.
 
@@ -213,7 +213,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑10 — Signed CI/CD & Artifact Attestation (SCD)
+## MCC‑10: Signed CI/CD & Artifact Attestation (SCD)
 **Purpose**: Prevent tampering; ensure only approved artifacts reach production.  
 **Scope**: All production deployments (models, prompts, indexes, filters).
 
@@ -231,7 +231,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑11 — AI Gateway Enforcement (AGE)
+## MCC‑11: AI Gateway Enforcement (AGE)
 **Purpose**: Centralize data controls, model allow‑listing, redaction, and provenance.  
 **Scope**: All LLM traffic (internal/external) and tools/plugins.
 
@@ -249,7 +249,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑12 — RAG & Vector Store Governance (RVG)
+## MCC‑12: RAG & Vector Store Governance (RVG)
 **Purpose**: Prevent poisoning and undocumented behavioral drift from retrieval.  
 **Scope**: Ingestion pipelines, embeddings, indexes, metadata, filters.
 
@@ -267,7 +267,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑13 — Incident Response for AI (IR‑AI)
+## MCC‑13: Incident Response for AI (IR‑AI)
 **Purpose**: Rapidly contain and learn from AI‑specific incidents.  
 **Scope**: Prompt injection, data leakage, poisoning, excessive agency, gateway bypass.
 
@@ -285,7 +285,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑14 — Post‑Market Monitoring & Drift (PMD)
+## MCC‑14: Post‑Market Monitoring & Drift (PMD)
 **Purpose**: Detect performance/safety drift and manage model lifecycle health.  
 **Scope**: All production AI systems.
 
@@ -303,7 +303,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑15 — Supplier & Third‑Party Governance (STG)
+## MCC‑15: Supplier & Third‑Party Governance (STG)
 **Purpose**: Control risk from external models, datasets, and tools.  
 **Scope**: Foundation models, SaaS LLMs, libraries, datasets, plugins.
 
@@ -321,7 +321,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑16 — Sector Overlays (SEC‑OV)
+## MCC‑16: Sector Overlays (SEC‑OV)
 **Purpose**: Apply additional requirements for Finance, Healthcare, Defense/Gov.  
 **Scope**: Any AI use case in those sectors.
 
@@ -340,7 +340,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑17 — Transparency Records & Technical Documentation (TRD)
+## MCC‑17: Transparency Records & Technical Documentation (TRD)
 **Purpose**: Maintain audit‑ready documentation for conformity and certification.  
 **Scope**: All high‑risk AI; any system subject to audit.
 
@@ -358,7 +358,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑18 — Gateway Bypass Prevention & Egress Control (GBE)
+## MCC‑18: Gateway Bypass Prevention & Egress Control (GBE)
 **Purpose**: Stop shadow AI traffic and ensure policy application to all LLM calls.  
 **Scope**: All networks and compute where AI is used.
 
@@ -376,7 +376,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑19 — Explainability & Output Governance (XOG)
+## MCC‑19: Explainability & Output Governance (XOG)
 **Purpose**: Ensure outputs are appropriate, reviewable, and—when required—explainable.  
 **Scope**: Any decision‑impacting output; customer‑facing content.
 
@@ -394,7 +394,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## MCC‑20 — Governance Reviews & Continuous Improvement (GRCI)
+## MCC‑20: Governance Reviews & Continuous Improvement (GRCI)
 **Purpose**: Keep the AIMS effective and aligned with evolving laws/risks.  
 **Scope**: Program‑wide.
 
@@ -412,7 +412,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## Appendix A — Abbreviations
+## Appendix A: Abbreviations
 - **AIIA/AIRA** — AI Impact/Risk Assessment
 - **AIMS** — AI Management System
 - **ARB** — Access Control & RBAC
@@ -441,7 +441,7 @@ This Master Controls Catalog (MCC) defines a unified, globally aligned control s
 
 ---
 
-## Appendix B — Notes on Evidence Patterns
+## Appendix B: Notes on Evidence Patterns
 For each control, maintain a folder or wiki page containing:
 - Control owner and SMEs
 - Related procedures and configuration references
