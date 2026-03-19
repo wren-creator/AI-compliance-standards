@@ -10,4 +10,4 @@ Additionally, please read the following project standards:
 - **CODE_OF_CONDUCT.md**: establishes expected behavior and community guidelines.  
 - **CONTRIBUTORS.md**: outlines contribution practices, acknowledgements, and guidelines for participating in this project.
 
-[Open Source](https://badgen.net/badge/open/source/)
+![Open Source](https://badgen.net/badge/open/source/)
