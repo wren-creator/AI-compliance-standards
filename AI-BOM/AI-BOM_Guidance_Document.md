@@ -1,5 +1,5 @@
 **AI‑BOM Guidance Document**<br><br>
-*1. Purpose of This Document*<br>
+*1. Purpose of This Document*<br><br>
 The AI‑BOM provides a unified, auditable inventory of all AI system components, ensuring full traceability, provenance verification, and governance enforcement across your AI pipeline. It is the AI‑equivalent of an SBOM and is required for compliance with global AI governance standards including:
 
 EU AI Act Annex IV: technical documentation, provenance, model lineage<br>
@@ -11,8 +11,8 @@ NIST SP 800‑171 (3.4.x): configuration baselines for controlled environments<b
 
 Your current architecture (signed artifacts, model registry, gateway policy, CI/CD enforcement, provenance hashing) already treats AI as configuration. Therefore, the AI‑BOM becomes the single authoritative compliance artifact for every AI component in your ecosystem.
 
-*2. Scope of an AI‑BOM*<br>
-An AI‑BOM covers all configuration items used in AI development, training, deployment, and evaluation.<br>
+*2. Scope of an AI‑BOM*<br><br>
+An AI‑BOM covers all configuration items used in AI development, training, deployment, and evaluation.<br><br>
 *2.1 Models*<br>
 
 Base models (open‑source, licensed, internal)<br>
@@ -52,8 +52,8 @@ Inference policies and rate‑limits<br>
 
 All these artifacts are already CM‑6 governed in your environment; the AI‑BOM formalizes them into a standard, audit‑friendly structure.<br>
 
-*3. Repository Structure*<br>
-Place the AI‑BOM hierarchy within your governance repository:<br>
+*3. Repository Structure*<br><br>
+Place the AI‑BOM hierarchy within your governance repository:<br><br>
 /AI-BOM/<br>
     &nbsp;&nbsp;&nbsp;README.md<br>
     &nbsp;&nbsp;&nbsp;schema/<br>
@@ -79,7 +79,8 @@ Compliance auditability<br>
 
 
 *4. AI‑BOM Master Schema (JSON)*<br><br>
-*5. Governance & Enforcement Rules*<br>
+The Master Schema can be found here. [Master Schema](./schema/ai-bom.schema.json)<br><br>
+*5. Governance & Enforcement Rules*<br><br>
 These rules are intended to be automated via a GitHub PR workflow:<br>
 
 | **Requirement**                                                     | **Enforcement**     |
