@@ -93,7 +93,7 @@ These rules are intended to be automated via a GitHub PR workflow:<br>
 | SBOM reference required for any executable/library                   | ❌ Block merge        |
 
 Workflow lives in:<br>
-/.github/workflows/ai-bom-validation.yml<br>
+[/.github/workflows/ai-bom-governance.yml](../.github/workflows/ai-bom-governance.yml)<br>
 
 *6. Integration With Existing Controls*<br><br>
 Your governance stack is already AI‑BOM‑ready:<br>
