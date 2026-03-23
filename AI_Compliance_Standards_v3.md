@@ -480,7 +480,7 @@ Based on the inputs above, the system auto-classifies the project into one of th
 
 ---
 
-## 14. US Federal and Payment Card Compliance Overlays
+## 15. US Federal and Payment Card Compliance Overlays
 
 The core framework established in this document is anchored to EU AI Act, NIST AI RMF, and ISO/IEC 42001. For organizations operating in US federal, defense, or payment card environments, three additional compliance dimensions require explicit treatment: **DISA Security Technical Implementation Guides (STIGs)**, the **CMS Acceptable Risk Safeguards (ARS)** control overlay, and **PCI DSS v4.0**. For systems in scope, these are mandatory — not optional additions — and carry significant audit and contractual consequences if unaddressed.
 
