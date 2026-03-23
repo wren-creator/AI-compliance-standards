@@ -484,7 +484,7 @@ Based on the inputs above, the system auto-classifies the project into one of th
 
 The core framework established in this document is anchored to EU AI Act, NIST AI RMF, and ISO/IEC 42001. For organizations operating in US federal, defense, or payment card environments, three additional compliance dimensions require explicit treatment: **DISA Security Technical Implementation Guides (STIGs)**, the **CMS Acceptable Risk Safeguards (ARS)** control overlay, and **PCI DSS v4.0**. For systems in scope, these are mandatory — not optional additions — and carry significant audit and contractual consequences if unaddressed.
 
-### 14.1 DISA STIG Applicability for AI Systems
+### 15.1 DISA STIG Applicability for AI Systems
 
 While no AI-specific STIG exists as a standalone document yet, AI inference workloads are subject to the STIGs governing their host operating systems, container runtimes, network components, and web services. For any DoD-adjacent, FedRAMP-scoped, or IL2/IL4/IL5 workload, STIG compliance on the compute layer is non-negotiable and must be explicitly tied to the CM-6 configuration hardening requirements already defined in this framework.
 
@@ -506,7 +506,7 @@ While no AI-specific STIG exists as a standalone document yet, AI inference work
 - **TEVV inclusion:** Pre-production STIG scans (using SCAP-validated tools such as OpenSCAP or SCC) must be included as a gate in the TEVV checklist for any federal or DoD-adjacent deployment. Open **Category I findings are an automatic No-Go.**
 - **Incident response:** STIG compliance deviations discovered during incident investigation must be treated as potential contributing factors and documented in the post-incident report.
 
-### 14.2 CMS Acceptable Risk Safeguards (ARS) Control Overlay
+### 15.2 CMS Acceptable Risk Safeguards (ARS) Control Overlay
 
 The CMS ARS is a mandatory control overlay for all systems operating within CMS environments or connecting to CMS data, including Medicare, Medicaid, and CHIP-related workloads. It is based on NIST SP 800-53 Rev.5 but applies CMS-specific tailoring — tightening certain controls, adding CMS-unique requirements, and defining Organization-Defined Parameters (ODPs) that must be explicitly addressed.
 
@@ -530,7 +530,7 @@ The CMS ARS is a mandatory control overlay for all systems operating within CMS 
 - **CMS MOU / Interconnection Security Agreement (ISA):** AI systems connecting to CMS data systems require documented MOUs and ISAs covering data flows, security controls, and incident reporting obligations.
 - **Annual security assessment:** ARS-governed systems require annual security assessments — not just quarterly reviews. AI system assessments must include model behavior evaluation, not just infrastructure scanning.
 
-### 14.3 PCI DSS v4.0 Alignment
+### 15.3 PCI DSS v4.0 Alignment
 
 PCI DSS v4.0 applies to any system that stores, processes, or transmits cardholder data (CHD) or sensitive authentication data (SAD), or that could impact the security of such data. For AI systems in financial services fraud detection models, payment authorization assistants, customer service chatbots with access to account data, or any LLM with retrieval access to payment records. PCI DSS scoping and compliance is mandatory.
 
@@ -563,7 +563,7 @@ Incorrect scoping is the most common PCI DSS failure mode. Scope determination i
 - **Req. 12.3.2 — Targeted Risk Analysis (TRA):** Organizations using the customized approach for any PCI DSS requirement must conduct a formal TRA. AI systems implementing compensating controls must document a TRA as supporting evidence.
 - **Req. 8.4.2 — MFA expansion:** Expanded from v3.2.1 to require MFA for all personnel with access to the CDE. LLM agent service accounts accessing CDE resources must implement equivalent controls or document an accepted exception with compensating controls.
 
-### 14.4 Updated Global Compliance Matrix — Extended Framework Coverage
+### 15.4 Updated Global Compliance Matrix — Extended Framework Coverage
 
 The following updated matrix extends the compliance mapping from Section 9 to include DISA STIG, CMS ARS, and PCI DSS v4.0.
 
