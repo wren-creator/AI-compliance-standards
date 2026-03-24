@@ -1,3 +1,6 @@
+![Open Source](https://badgen.net/badge/open/source/)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 # AI-compliance-standards
 
 This will be my living workspace on building the future of global AI compliance guidelines.
@@ -9,5 +12,3 @@ Additionally, please read the following project standards:
 
 - **CODE_OF_CONDUCT.md**: establishes expected behavior and community guidelines.  
 - **CONTRIBUTORS.md**: outlines contribution practices, acknowledgements, and guidelines for participating in this project.
-
-![Open Source](https://badgen.net/badge/open/source/)
