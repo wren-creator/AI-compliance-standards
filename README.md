@@ -10,5 +10,5 @@ Be sure to review the **AI-BOM** subdirectory, which contains its own file hiera
 
 Additionally, please read the following project standards:
 
-- **CODE_OF_CONDUCT.md**: establishes expected behavior and community guidelines.  
-- **CONTRIBUTORS.md**: outlines contribution practices, acknowledgements, and guidelines for participating in this project.
+- [**CODE_OF_CONDUCT.md**](CODE_OF_CONDUCT): establishes expected behavior and community guidelines.  
+- [**CONTRIBUTORS.md**](CONTRIBUTERS.md): outlines contribution practices, acknowledgements, and guidelines for participating in this project.
